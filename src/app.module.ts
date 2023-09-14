@@ -1,11 +1,12 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { BookController } from './app.controller';
+import { BookService } from './app.service';
 
 @Module({
   imports: [],
   controllers: [BookController],
-  providers: [],
+  providers: [BookService],
   exports: [],
 })
 export class RootModule {
